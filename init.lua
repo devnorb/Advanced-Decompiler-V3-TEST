@@ -12,9 +12,9 @@ local POINT_TYPE_ELSE = 1
 local POINT_TYPE_ELSEIF = 2
 
 local function LoadFromUrl(x)
-	local BASE_USER = "w-a-e"
+	local BASE_USER = "devnorb"
 	local BASE_BRANCH = "main"
-	local BASE_URL = "https://raw.githubusercontent.com/%s/Advanced-Decompiler-V3/%s/%s.lua"
+	local BASE_URL = "https://raw.githubusercontent.com/%s/Advanced-Decompiler-V3-TEST/%s/%s.lua"
 
 	local loadSuccess, loadResult = pcall(function()
 		local formattedUrl = string.format(BASE_URL, BASE_USER, BASE_BRANCH, x)
