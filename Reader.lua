@@ -14,7 +14,7 @@ function Reader.new(bytecode)
 	end
 
 	function self:nextByte()
-		if pcall(function() buffer.readu8(stream, cursor) end then
+		if pcall(function() buffer.readu8(stream, cursor) end) then
 			local result = buffer.readu8(stream, cursor);
 			cursor += 1
 			return result
